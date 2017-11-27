@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<traffic_data xmlns="http://www.5t.torino.it/simone/ns/traffic_data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.5t.torino.it/simone/ns/traffic_data http://www.5t.torino.it/simone/ns/traffic_data.xsd" datatype="misura" generation_time="2017-11-06T14:16:00+01:00" start_time="2017-11-06T14:10:00+01:00" end_time="2017-11-06T14:15:00+01:00" source="matrix.FDT">
+  <location_reference>
+    <WGS84_info/>
+  </location_reference>
+  <FDT_data lcd1="40202" Road_LCD="40201" Road_name="Corso Vinzaglio(TO)" offset="55" direction="positive" lat="45.06766" lng="7.66662" accuracy="100" period="5">
+    <speedflow flow="288.00" speed="21.46"/>
+  </FDT_data>
+  <FDT_data lcd1="39986" Road_LCD="39985" Road_name="Corso Belgio(TO)" offset="687" direction="positive" lat="45.07443" lng="7.72149" accuracy="-1" period="5">
+    <speedflow flow="804.00" speed="19.58"/>
+  </FDT_data>
+  <FDT_data lcd1="40040" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="414" direction="positive" lat="45.11606" lng="7.70910" accuracy="100" period="5">
+    <speedflow flow="1434.00" speed="52.53"/>
+  </FDT_data>
+  <FDT_data lcd1="40174" Road_LCD="40172" Road_name="Corso Trieste(TO)" offset="704" direction="positive" lat="45.01515" lng="7.66891" accuracy="100" period="5">
+    <speedflow flow="2172.00" speed="50.28"/>
+  </FDT_data>
+  <FDT_data lcd1="40182" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="434" direction="positive" lat="45.01641" lng="7.62801" accuracy="100" period="5">
+    <speedflow flow="840.00" speed="46.55"/>
+  </FDT_data>
+  <FDT_data lcd1="40183" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="988" direction="negative" lat="45.01608" lng="7.62745" accuracy="100" period="5">
+    <speedflow flow="1380.00" speed="38.57"/>
+  </FDT_data>
+  <FDT_data lcd1="40021" Road_LCD="40017" Road_name="Corso Francia(TO)" offset="549" direction="positive" lat="45.07420" lng="7.61264" accuracy="100" period="5">
+    <speedflow flow="960.00" speed="49.38"/>
+  </FDT_data>
+  <FDT_data lcd1="40022" Road_LCD="40017" Road_name="Corso Francia(TO)" offset="124" direction="positive" lat="45.07437" lng="7.61575" accuracy="100" period="5">
+    <speedflow flow="744.00" speed="42.61"/>
+  </FDT_data>
+  <FDT_data lcd1="40078" Road_LCD="40076" Road_name="Corso Monte Cucco(TO)" offset="1297" direction="negative" lat="45.06422" lng="7.63067" accuracy="100" period="5">
+    <speedflow flow="204.00" speed="14.87"/>
+  </FDT_data>
+  <FDT_data lcd1="40106" Road_LCD="40102" Road_name="Corso Peschiera(TO)" offset="68" direction="positive" lat="45.06452" lng="7.64980" accuracy="100" period="5">
+    <speedflow flow="552.00" speed="27.57"/>
+  </FDT_data>
+  <FDT_data lcd1="40041" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="938" direction="positive" lat="45.10447" lng="7.70151" accuracy="100" period="5">
+    <speedflow flow="1470.00" speed="43.65"/>
+  </FDT_data>
+  <FDT_data lcd1="40043" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="306" direction="negative" lat="45.09451" lng="7.69536" accuracy="100" period="5">
+    <speedflow flow="336.00" speed="23.51"/>
+  </FDT_data>
+  <FDT_data lcd1="40195" Road_LCD="40192" Road_name="Corso Vercelli(TO)" offset="1490" direction="positive" lat="45.09052" lng="7.68898" accuracy="100" period="5">
+    <speedflow flow="384.00" speed="16.65"/>
+  </FDT_data>
+  <FDT_data lcd1="40266" Road_LCD="40265" Road_name="Via Cernaia(TO)" offset="326" direction="positive" lat="45.07241" lng="7.67172" accuracy="-1" period="5">
+    <speedflow flow="96.00" speed="15.00"/>
+  </FDT_data>
+  <FDT_data lcd1="40125" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="30" direction="positive" lat="45.08220" lng="7.66692" accuracy="75" period="5">
+    <speedflow flow="588.00" speed="23.34"/>
+  </FDT_data>
+  <FDT_data lcd1="40125" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="36" direction="negative" lat="45.08252" lng="7.66632" accuracy="100" period="5">
+    <speedflow flow="672.00" speed="26.95"/>
+  </FDT_data>
+  <FDT_data lcd1="40127" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="405" direction="negative" lat="45.07826" lng="7.67918" accuracy="100" period="5">
+    <speedflow flow="912.00" speed="15.69"/>
+  </FDT_data>
+  <FDT_data lcd1="40126" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="292" direction="positive" lat="45.07798" lng="7.67970" accuracy="100" period="5">
+    <speedflow flow="912.00" speed="19.06"/>
+  </FDT_data>
+  <FDT_data lcd1="40128" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="140" direction="negative" lat="45.07515" lng="7.68848" accuracy="100" period="5">
+    <speedflow flow="1056.00" speed="14.10"/>
+  </FDT_data>
+  <FDT_data lcd1="40146" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="998" direction="positive" lat="45.07289" lng="7.69154" accuracy="100" period="5">
+    <speedflow flow="636.00" speed="14.91"/>
+  </FDT_data>
+  <FDT_data lcd1="40147" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="319" direction="negative" lat="45.07239" lng="7.69161" accuracy="100" period="5">
+    <speedflow flow="336.00" speed="14.60"/>
+  </FDT_data>
+  <FDT_data lcd1="40147" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="427" direction="negative" lat="45.07147" lng="7.69276" accuracy="100" period="5">
+    <speedflow flow="348.00" speed="21.98"/>
+  </FDT_data>
+  <FDT_data lcd1="40146" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="36" direction="positive" lat="45.06579" lng="7.69858" accuracy="100" period="5">
+    <speedflow flow="336.00" speed="19.50"/>
+  </FDT_data>
+  <FDT_data lcd1="40227" Road_LCD="40226" Road_name="Ponte Regina Margherita(TO)" offset="24" direction="positive" lat="45.06864" lng="7.70787" accuracy="100" period="5">
+    <speedflow flow="384.00" speed="15.99"/>
+  </FDT_data>
+  <FDT_data lcd1="40166" Road_LCD="40164" Road_name="Corso Tortona(TO)" offset="75" direction="negative" lat="45.06956" lng="7.70824" accuracy="100" period="5">
+    <speedflow flow="552.00" speed="21.40"/>
+  </FDT_data>
+  <FDT_data lcd1="40129" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="221" direction="positive" lat="45.06975" lng="7.70460" accuracy="100" period="5">
+    <speedflow flow="228.00" speed="24.44"/>
+  </FDT_data>
+  <FDT_data lcd1="40130" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="375" direction="negative" lat="45.07013" lng="7.70375" accuracy="100" period="5">
+    <speedflow flow="228.00" speed="20.43"/>
+  </FDT_data>
+  <FDT_data lcd1="39987" Road_LCD="39985" Road_name="Corso Belgio(TO)" offset="52" direction="positive" lat="45.07197" lng="7.70796" accuracy="100" period="5">
+    <speedflow flow="540.00" speed="22.48"/>
+  </FDT_data>
+  <FDT_data lcd1="40219" Road_LCD="40217" Road_name="Ponte Carlo Emanuele I(TO)" offset="27" direction="negative" lat="45.07531" lng="7.70473" accuracy="100" period="5">
+    <speedflow flow="1284.00" speed="28.22"/>
+  </FDT_data>
+  <FDT_data lcd1="40090" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="743" direction="positive" lat="45.08310" lng="7.69749" accuracy="100" period="5">
+    <speedflow flow="528.00" speed="27.10"/>
+  </FDT_data>
+  <FDT_data lcd1="40091" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="707" direction="negative" lat="45.08495" lng="7.69599" accuracy="100" period="5">
+    <speedflow flow="702.00" speed="28.07"/>
+  </FDT_data>
+  <FDT_data lcd1="40133" Road_LCD="40131" Road_name="Corso Regio Parco(TO)" offset="40" direction="negative" lat="45.07978" lng="7.70111" accuracy="100" period="5">
+    <speedflow flow="408.00" speed="35.93"/>
+  </FDT_data>
+  <FDT_data lcd1="40044" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="793" direction="positive" lat="45.08135" lng="7.68658" accuracy="100" period="5">
+    <speedflow flow="228.00" speed="14.71"/>
+  </FDT_data>
+  <FDT_data lcd1="40284" Road_LCD="40282" Road_name="Via Pianezza(TO)" offset="48" direction="positive" lat="45.09134" lng="7.65489" accuracy="100" period="5">
+    <speedflow flow="372.00" speed="36.95"/>
+  </FDT_data>
+  <FDT_data lcd1="40123" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="153" direction="positive" lat="45.08680" lng="7.65311" accuracy="100" period="5">
+    <speedflow flow="864.00" speed="42.99"/>
+  </FDT_data>
+  <FDT_data lcd1="40200" Road_LCD="40197" Road_name="Corso Vigevano(TO)" offset="44" direction="negative" lat="45.08904" lng="7.68790" accuracy="8" period="5">
+    <speedflow flow="672.00" speed="26.96"/>
+  </FDT_data>
+  <FDT_data lcd1="40089" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="35" direction="positive" lat="45.08869" lng="7.68849" accuracy="100" period="5">
+    <speedflow flow="612.00" speed="25.10"/>
+  </FDT_data>
+  <FDT_data lcd1="40090" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="47" direction="negative" lat="45.08801" lng="7.69045" accuracy="-1" period="5">
+    <speedflow flow="912.00" speed="27.27"/>
+  </FDT_data>
+  <FDT_data lcd1="40090" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="26" direction="positive" lat="45.08765" lng="7.69109" accuracy="100" period="5">
+    <speedflow flow="528.00" speed="25.54"/>
+  </FDT_data>
+  <FDT_data lcd1="40090" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="294" direction="positive" lat="45.08621" lng="7.69368" accuracy="100" period="5">
+    <speedflow flow="462.00" speed="28.49"/>
+  </FDT_data>
+  <FDT_data lcd1="40091" Road_LCD="40088" Road_name="Corso Novara(TO)" offset="1034" direction="negative" lat="45.08685" lng="7.69273" accuracy="100" period="5">
+    <speedflow flow="708.00" speed="24.45"/>
+  </FDT_data>
+  <FDT_data lcd1="40213" Road_LCD="40211" Road_name="Ponte Amedeo VIII(TO)" offset="213" direction="negative" lat="45.09542" lng="7.71770" accuracy="100" period="5">
+    <speedflow flow="1308.00" speed="10.89"/>
+  </FDT_data>
+  <FDT_data lcd1="40212" Road_LCD="40211" Road_name="Ponte Amedeo VIII(TO)" offset="580" direction="positive" lat="45.09581" lng="7.71802" accuracy="100" period="5">
+    <speedflow flow="1236.00" speed="31.45"/>
+  </FDT_data>
+  <FDT_data lcd1="40264" Road_LCD="40261" Road_name="Via Botticelli(TO)" offset="69" direction="negative" lat="45.10331" lng="7.69614" accuracy="53" period="5">
+    <speedflow flow="396.00" speed="52.76"/>
+  </FDT_data>
+  <FDT_data lcd1="40194" Road_LCD="40192" Road_name="Corso Vercelli(TO)" offset="1477" direction="positive" lat="45.10593" lng="7.69645" accuracy="100" period="5">
+    <speedflow flow="696.00" speed="33.83"/>
+  </FDT_data>
+  <FDT_data lcd1="40050" Road_LCD="40046" Road_name="Corso Grosseto(TO)" offset="601" direction="negative" lat="45.10444" lng="7.68113" accuracy="90" period="5">
+    <speedflow flow="912.00" speed="39.37"/>
+  </FDT_data>
+  <FDT_data lcd1="40107" Road_LCD="40102" Road_name="Corso Peschiera(TO)" offset="236" direction="negative" lat="45.06240" lng="7.65548" accuracy="100" period="5">
+    <speedflow flow="852.00" speed="22.79"/>
+  </FDT_data>
+  <FDT_data lcd1="40106" Road_LCD="40102" Road_name="Corso Peschiera(TO)" offset="662" direction="positive" lat="45.06198" lng="7.65636" accuracy="100" period="5">
+    <speedflow flow="708.00" speed="18.79"/>
+  </FDT_data>
+  <FDT_data lcd1="39978" Road_LCD="39975" Road_name="Corso Agnelli(TO)" offset="818" direction="positive" lat="45.04129" lng="7.64773" accuracy="100" period="5">
+    <speedflow flow="972.00" speed="26.68"/>
+  </FDT_data>
+  <FDT_data lcd1="39979" Road_LCD="39975" Road_name="Corso Agnelli(TO)" offset="339" direction="negative" lat="45.04104" lng="7.64748" accuracy="100" period="5">
+    <speedflow flow="576.00" speed="30.91"/>
+  </FDT_data>
+  <FDT_data lcd1="40187" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="797" direction="negative" lat="45.04119" lng="7.65583" accuracy="100" period="5">
+    <speedflow flow="96.00" speed="28.85"/>
+  </FDT_data>
+  <FDT_data lcd1="40053" Road_LCD="40052" Road_name="Corso IV Novembre(TO)" offset="797" direction="positive" lat="45.05013" lng="7.65392" accuracy="100" period="5">
+    <speedflow flow="612.00" speed="19.18"/>
+  </FDT_data>
+  <FDT_data lcd1="40054" Road_LCD="40052" Road_name="Corso IV Novembre(TO)" offset="34" direction="negative" lat="45.05123" lng="7.65464" accuracy="100" period="5">
+    <speedflow flow="432.00" speed="24.28"/>
+  </FDT_data>
+  <FDT_data lcd1="40010" Road_LCD="40009" Road_name="Corso Duca Degli Abruzzi(TO)" offset="30" direction="positive" lat="45.05329" lng="7.65625" accuracy="100" period="5">
+    <speedflow flow="444.00" speed="19.90"/>
+  </FDT_data>
+  <FDT_data lcd1="40202" Road_LCD="40201" Road_name="Corso Vinzaglio(TO)" offset="252" direction="positive" lat="45.06927" lng="7.66773" accuracy="100" period="5">
+    <speedflow flow="204.00" speed="14.96"/>
+  </FDT_data>
+  <FDT_data lcd1="40178" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="5" direction="positive" lat="45.05004" lng="7.66592" accuracy="100" period="5">
+    <speedflow flow="444.00" speed="22.88"/>
+  </FDT_data>
+  <FDT_data lcd1="40178" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="45" direction="negative" lat="45.04981" lng="7.66548" accuracy="100" period="5">
+    <speedflow flow="264.00" speed="19.70"/>
+  </FDT_data>
+  <FDT_data lcd1="40162" Road_LCD="40160" Road_name="Corso Sommeiller(TO)" offset="13" direction="negative" lat="45.05496" lng="7.67166" accuracy="100" period="5">
+    <speedflow flow="432.00" speed="24.84"/>
+  </FDT_data>
+  <FDT_data lcd1="40300" Road_LCD="40299" Road_name="Via Sacchi(TO)" offset="71" direction="positive" lat="45.05561" lng="7.67201" accuracy="67" period="5">
+    <speedflow flow="192.00" speed="23.36"/>
+  </FDT_data>
+  <FDT_data lcd1="40162" Road_LCD="40160" Road_name="Corso Sommeiller(TO)" offset="52" direction="positive" lat="45.05538" lng="7.67115" accuracy="66" period="5">
+    <speedflow flow="372.00" speed="19.71"/>
+  </FDT_data>
+  <FDT_data lcd1="40179" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="39" direction="negative" lat="45.05501" lng="7.67117" accuracy="100" period="5">
+    <speedflow flow="96.00" speed="27.89"/>
+  </FDT_data>
+  <FDT_data lcd1="40064" Road_LCD="40062" Road_name="Corso Maroncelli(TO)" offset="319" direction="negative" lat="45.01774" lng="7.66565" accuracy="100" period="5">
+    <speedflow flow="708.00" speed="32.29"/>
+  </FDT_data>
+  <FDT_data lcd1="40300" Road_LCD="40299" Road_name="Via Sacchi(TO)" offset="754" direction="positive" lat="45.06104" lng="7.67611" accuracy="100" period="5">
+    <speedflow flow="300.00" speed="18.14"/>
+  </FDT_data>
+  <FDT_data lcd1="40209" Road_LCD="40204" Road_name="Corso Vittorio Emanuele II(TO)" offset="604" direction="negative" lat="45.06190" lng="7.68130" accuracy="100" period="5">
+    <speedflow flow="732.00" speed="17.48"/>
+  </FDT_data>
+  <FDT_data lcd1="40163" Road_LCD="40160" Road_name="Corso Sommeiller(TO)" offset="239" direction="negative" lat="45.05556" lng="7.67072" accuracy="78" period="5">
+    <speedflow flow="444.00" speed="18.80"/>
+  </FDT_data>
+  <FDT_data lcd1="40178" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="455" direction="positive" lat="45.05323" lng="7.66941" accuracy="100" period="5">
+    <speedflow flow="432.00" speed="21.30"/>
+  </FDT_data>
+  <FDT_data lcd1="40179" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="320" direction="negative" lat="45.05299" lng="7.66893" accuracy="100" period="5">
+    <speedflow flow="84.00" speed="27.75"/>
+  </FDT_data>
+  <FDT_data lcd1="40178" Road_LCD="40176" Road_name="Corso Turati(TO)" offset="300" direction="positive" lat="45.05216" lng="7.66814" accuracy="49" period="5">
+    <speedflow flow="72.00" speed="27.59"/>
+  </FDT_data>
+  <FDT_data lcd1="40158" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="436" direction="positive" lat="45.05277" lng="7.63471" accuracy="100" period="5">
+    <speedflow flow="1296.00" speed="30.90"/>
+  </FDT_data>
+  <FDT_data lcd1="39977" Road_LCD="39975" Road_name="Corso Agnelli(TO)" offset="423" direction="positive" lat="45.03193" lng="7.64111" accuracy="-1" period="5">
+    <speedflow flow="576.00" speed="47.64"/>
+  </FDT_data>
+  <FDT_data lcd1="39979" Road_LCD="39975" Road_name="Corso Agnelli(TO)" offset="774" direction="negative" lat="45.03767" lng="7.64492" accuracy="100" period="5">
+    <speedflow flow="564.00" speed="27.29"/>
+  </FDT_data>
+  <FDT_data lcd1="40186" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="555" direction="negative" lat="45.03532" lng="7.64920" accuracy="100" period="5">
+    <speedflow flow="348.00" speed="26.27"/>
+  </FDT_data>
+  <FDT_data lcd1="40185" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="634" direction="positive" lat="45.03712" lng="7.65156" accuracy="100" period="5">
+    <speedflow flow="552.00" speed="33.24"/>
+  </FDT_data>
+  <FDT_data lcd1="40253" Road_LCD="40251" Road_name="Strada Di Settimo(TO)" offset="511" direction="positive" lat="45.10360" lng="7.72598" accuracy="100" period="5">
+    <speedflow flow="768.00" speed="52.24"/>
+  </FDT_data>
+  <FDT_data lcd1="39988" Road_LCD="39985" Road_name="Corso Belgio(TO)" offset="165" direction="negative" lat="45.07134" lng="7.70358" accuracy="100" period="5">
+    <speedflow flow="156.00" speed="19.79"/>
+  </FDT_data>
+  <FDT_data lcd1="40129" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="296" direction="negative" lat="45.07174" lng="7.69882" accuracy="100" period="5">
+    <speedflow flow="576.00" speed="27.77"/>
+  </FDT_data>
+  <FDT_data lcd1="40124" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="291" direction="positive" lat="45.08468" lng="7.65943" accuracy="100" period="5">
+    <speedflow flow="852.00" speed="25.48"/>
+  </FDT_data>
+  <FDT_data lcd1="40125" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="442" direction="negative" lat="45.08406" lng="7.66165" accuracy="100" period="5">
+    <speedflow flow="504.00" speed="27.26"/>
+  </FDT_data>
+  <FDT_data lcd1="40231" Road_LCD="40229" Road_name="Ponte Umberto I(TO)" offset="29" direction="negative" lat="45.05832" lng="7.69105" accuracy="100" period="5">
+    <speedflow flow="876.00" speed="14.78"/>
+  </FDT_data>
+  <FDT_data lcd1="40095" Road_LCD="40093" Road_name="Corso Orbassano(TO)" offset="710" direction="positive" lat="45.03114" lng="7.61203" accuracy="100" period="5">
+    <speedflow flow="1608.00" speed="50.82"/>
+  </FDT_data>
+  <FDT_data lcd1="40040" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="329" direction="positive" lat="45.11663" lng="7.70948" accuracy="-1" period="5">
+    <speedflow flow="972.00" speed="27.94"/>
+  </FDT_data>
+  <FDT_data lcd1="40207" Road_LCD="40204" Road_name="Corso Vittorio Emanuele II(TO)" offset="91" direction="positive" lat="45.06521" lng="7.67191" accuracy="100" period="5">
+    <speedflow flow="588.00" speed="26.63"/>
+  </FDT_data>
+  <FDT_data lcd1="40207" Road_LCD="40204" Road_name="Corso Vittorio Emanuele II(TO)" offset="100" direction="negative" lat="45.06606" lng="7.66981" accuracy="100" period="5">
+    <speedflow flow="516.00" speed="19.10"/>
+  </FDT_data>
+  <FDT_data lcd1="40042" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="1203" direction="positive" lat="45.09244" lng="7.69374" accuracy="65" period="5">
+    <speedflow flow="480.00" speed="19.88"/>
+  </FDT_data>
+  <FDT_data lcd1="40100" Road_LCD="40093" Road_name="Corso Orbassano(TO)" offset="888" direction="negative" lat="45.04097" lng="7.63567" accuracy="100" period="5">
+    <speedflow flow="636.00" speed="21.25"/>
+  </FDT_data>
+  <FDT_data lcd1="40157" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="704" direction="positive" lat="45.04638" lng="7.63432" accuracy="100" period="5">
+    <speedflow flow="1476.00" speed="34.53"/>
+  </FDT_data>
+  <FDT_data lcd1="40158" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="382" direction="negative" lat="45.04537" lng="7.63406" accuracy="100" period="5">
+    <speedflow flow="948.00" speed="43.44"/>
+  </FDT_data>
+  <FDT_data lcd1="40171" Road_LCD="40167" Road_name="Corso Trapani(TO)" offset="249" direction="negative" lat="45.07363" lng="7.64177" accuracy="91" period="5">
+    <speedflow flow="600.00" speed="40.45"/>
+  </FDT_data>
+  <FDT_data lcd1="40056" Road_LCD="40055" Road_name="Corso Lecce(TO)" offset="14" direction="positive" lat="45.07374" lng="7.64201" accuracy="82" period="5">
+    <speedflow flow="552.00" speed="55.84"/>
+  </FDT_data>
+  <FDT_data lcd1="40158" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="678" direction="negative" lat="45.04270" lng="7.63398" accuracy="100" period="5">
+    <speedflow flow="1092.00" speed="38.31"/>
+  </FDT_data>
+  <FDT_data lcd1="40043" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="915" direction="negative" lat="45.09947" lng="7.69852" accuracy="100" period="5">
+    <speedflow flow="624.00" speed="18.82"/>
+  </FDT_data>
+  <FDT_data lcd1="4851" Road_LCD="335" Road_name="SS23 Del Colle Di Sestriere" offset="4257" direction="positive" lat="44.87902" lng="7.31392" accuracy="100" period="5">
+    <speedflow flow="564.00" speed="71.56"/>
+  </FDT_data>
+  <FDT_data lcd1="4864" Road_LCD="335" Road_name="SS23 Del Colle Di Sestriere" offset="8784" direction="positive" lat="44.96192" lng="6.88395" accuracy="100" period="5">
+    <speedflow flow="24.00" speed="56.00"/>
+  </FDT_data>
+  <FDT_data lcd1="40189" Road_LCD="40188" Road_name="Corso Unita' D'italia(TO)" offset="104" direction="positive" lat="45.01779" lng="7.66908" accuracy="100" period="5">
+    <speedflow flow="2184.00" speed="45.32"/>
+  </FDT_data>
+  <FDT_data lcd1="40124" Road_LCD="40118" Road_name="Corso Regina Margherita(TO)" offset="736" direction="positive" lat="45.08299" lng="7.66461" accuracy="100" period="5">
+    <speedflow flow="768.00" speed="23.87"/>
+  </FDT_data>
+  <FDT_data lcd1="40042" Road_LCD="40039" Road_name="Corso Giulio Cesare(TO)" offset="831" direction="negative" lat="45.10900" lng="7.70485" accuracy="100" period="5">
+    <speedflow flow="1152.00" speed="33.47"/>
+  </FDT_data>
+  <FDT_data lcd1="40159" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="522" direction="negative" lat="45.05066" lng="7.63432" accuracy="100" period="5">
+    <speedflow flow="900.00" speed="21.00"/>
+  </FDT_data>
+  <FDT_data lcd1="40016" Road_LCD="40013" Road_name="Corso Einaudi(TO)" offset="524" direction="negative" lat="45.05943" lng="7.66312" accuracy="100" period="5">
+    <speedflow flow="696.00" speed="17.38"/>
+  </FDT_data>
+  <FDT_data lcd1="40186" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="670" direction="negative" lat="45.03448" lng="7.64825" accuracy="100" period="5">
+    <speedflow flow="372.00" speed="24.07"/>
+  </FDT_data>
+  <FDT_data lcd1="40185" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="289" direction="positive" lat="45.03463" lng="7.64885" accuracy="81" period="5">
+    <speedflow flow="288.00" speed="26.64"/>
+  </FDT_data>
+  <FDT_data lcd1="40184" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="267" direction="negative" lat="45.02413" lng="7.63681" accuracy="100" period="5">
+    <speedflow flow="672.00" speed="18.19"/>
+  </FDT_data>
+  <FDT_data lcd1="40147" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="599" direction="negative" lat="45.07017" lng="7.69397" accuracy="100" period="5">
+    <speedflow flow="408.00" speed="14.87"/>
+  </FDT_data>
+  <FDT_data lcd1="40147" Road_LCD="40145" Road_name="Corso San Maurizio(TO)" offset="1167" direction="negative" lat="45.06599" lng="7.69814" accuracy="100" period="5">
+    <speedflow flow="588.00" speed="19.23"/>
+  </FDT_data>
+  <FDT_data lcd1="40285" Road_LCD="40282" Road_name="Via Pianezza(TO)" offset="356" direction="negative" lat="45.09081" lng="7.65580" accuracy="100" period="5">
+    <speedflow flow="264.00" speed="18.91"/>
+  </FDT_data>
+  <FDT_data lcd1="40183" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="728" direction="negative" lat="45.01793" lng="7.62949" accuracy="92" period="5">
+    <speedflow flow="684.00" speed="22.81"/>
+  </FDT_data>
+  <FDT_data lcd1="40182" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="707" direction="positive" lat="45.01824" lng="7.63031" accuracy="100" period="5">
+    <speedflow flow="840.00" speed="18.16"/>
+  </FDT_data>
+  <FDT_data lcd1="40142" Road_LCD="40139" Road_name="Corso Rosselli(TO)" offset="133" direction="negative" lat="45.05354" lng="7.65454" accuracy="100" period="5">
+    <speedflow flow="480.00" speed="19.86"/>
+  </FDT_data>
+  <FDT_data lcd1="40110" Road_LCD="40108" Road_name="Corso Potenza(TO)" offset="34" direction="positive" lat="45.10030" lng="7.66002" accuracy="99" period="5">
+    <speedflow flow="744.00" speed="44.44"/>
+  </FDT_data>
+  <FDT_data lcd1="40182" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="1007" direction="positive" lat="45.02030" lng="7.63267" accuracy="74" period="5">
+    <speedflow flow="684.00" speed="24.61"/>
+  </FDT_data>
+  <FDT_data lcd1="40312" Road_LCD="40309" Road_name="Via Vigliani(TO)" offset="64" direction="negative" lat="45.02240" lng="7.63587" accuracy="58" period="5">
+    <speedflow flow="120.00" speed="30.85"/>
+  </FDT_data>
+  <FDT_data lcd1="40183" Road_LCD="40180" Road_name="Corso Unione Sovietica(TO)" offset="42" direction="positive" lat="45.02298" lng="7.63569" accuracy="100" period="5">
+    <speedflow flow="540.00" speed="33.32"/>
+  </FDT_data>
+  <FDT_data lcd1="39976" Road_LCD="39975" Road_name="Corso Agnelli(TO)" offset="54" direction="positive" lat="45.02330" lng="7.63528" accuracy="100" period="5">
+    <speedflow flow="756.00" speed="35.39"/>
+  </FDT_data>
+  <FDT_data lcd1="40097" Road_LCD="40093" Road_name="Corso Orbassano(TO)" offset="186" direction="positive" lat="45.03639" lng="7.62665" accuracy="100" period="5">
+    <speedflow flow="1488.00" speed="37.43"/>
+  </FDT_data>
+  <FDT_data lcd1="40002" Road_LCD="40000" Road_name="Corso Cosenza(TO)" offset="31" direction="positive" lat="45.03444" lng="7.64330" accuracy="100" period="5">
+    <speedflow flow="984.00" speed="37.33"/>
+  </FDT_data>
+  <FDT_data lcd1="40002" Road_LCD="40000" Road_name="Corso Cosenza(TO)" offset="56" direction="negative" lat="45.03511" lng="7.64272" accuracy="88" period="5">
+    <speedflow flow="1032.00" speed="39.45"/>
+  </FDT_data>
+  <FDT_data lcd1="40150" Road_LCD="40148" Road_name="Corso Sebastopoli(TO)" offset="95" direction="negative" lat="45.04927" lng="7.63367" accuracy="100" period="5">
+    <speedflow flow="648.00" speed="20.23"/>
+  </FDT_data>
+  <FDT_data lcd1="40158" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="43" direction="negative" lat="45.04849" lng="7.63423" accuracy="100" period="5">
+    <speedflow flow="1200.00" speed="42.58"/>
+  </FDT_data>
+  <FDT_data lcd1="40149" Road_LCD="40148" Road_name="Corso Sebastopoli(TO)" offset="260" direction="positive" lat="45.04951" lng="7.63217" accuracy="100" period="5">
+    <speedflow flow="852.00" speed="30.72"/>
+  </FDT_data>
+  <FDT_data lcd1="40168" Road_LCD="40167" Road_name="Corso Trapani(TO)" offset="22" direction="positive" lat="45.05555" lng="7.63489" accuracy="100" period="5">
+    <speedflow flow="1464.00" speed="32.85"/>
+  </FDT_data>
+  <FDT_data lcd1="40159" Road_LCD="40156" Road_name="Corso Siracusa(TO)" offset="38" direction="negative" lat="45.05514" lng="7.63456" accuracy="100" period="5">
+    <speedflow flow="912.00" speed="41.31"/>
+  </FDT_data>
+  <FDT_data lcd1="40169" Road_LCD="40167" Road_name="Corso Trapani(TO)" offset="41" direction="negative" lat="45.05768" lng="7.63478" accuracy="100" period="5">
+    <speedflow flow="960.00" speed="33.09"/>
+  </FDT_data>
+  <FDT_data lcd1="40140" Road_LCD="40139" Road_name="Corso Rosselli(TO)" offset="34" direction="positive" lat="45.05773" lng="7.63539" accuracy="100" period="5">
+    <speedflow flow="36.00" speed="16.86"/>
+  </FDT_data>
+</traffic_data>
+ 

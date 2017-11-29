@@ -12,6 +12,8 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.IBinder;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
@@ -19,6 +21,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -43,10 +46,13 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -54,6 +60,7 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -289,7 +296,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                     }
                 }
             }
-            System.out.println();
+            WebRequest wr = new WebRequest("updateAbitude.php", listOf);
+            wr.execute();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -420,5 +428,67 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         public Document getFile() {
             return doc;
         }
+    }
+
+    public class WebRequest extends AsyncTask<Object, Object, Object> {
+        private final String nomeScript;
+        private final ArrayList<List<String>> listOf;
+
+        WebRequest(String nomeScript, ArrayList<List<String>> listOf) {
+            this.nomeScript = nomeScript;
+            this.listOf = listOf;
+        }
+
+        @Override
+        protected Object doInBackground(Object... params) {
+            InputStream in;
+            try {
+                URL url = new URL("http://vforvaiano.altervista.org/" + nomeScript);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setConnectTimeout(60000);
+                connection.setRequestMethod("POST");
+                connection.connect();
+                // Generate parameter for the request
+                Uri.Builder builder = new Uri.Builder();
+                Random r = new Random();
+                String name = String.valueOf(r.nextLong());
+                builder.appendQueryParameter("name", name);
+                for(List<String> point : listOf) {
+                    for(int i = 0; i < point.size(); i=i+2) {
+                        String point1 = point.get(i), point2 = point.get(i+1);
+                        int begin = point1.indexOf(";");
+                        int finish = point1.indexOf(";");
+                        String lat1 = point1.substring(begin, finish);
+                        String long1 = point1.substring(finish);
+                        begin = point2.indexOf(";");
+                        finish = point2.indexOf(";");
+                        String lat2 = point2.substring(begin, finish);
+                        String long2 = point2.substring(finish);
+                        builder.appendQueryParameter("lat1", lat1)
+                                .appendQueryParameter("long1", long1)
+                                .appendQueryParameter("lat2", lat2)
+                                .appendQueryParameter("long2", long2);
+                    }
+                }
+
+                String query = builder.build().getEncodedQuery();
+                OutputStream os = connection.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+                writer.write(query);
+                writer.flush();
+                writer.close();
+                os.close();
+                in = connection.getInputStream();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+            return in;
+        }
+
+        @Override
+        protected void onPostExecute(Object objResult) {
+        }
+
     }
 }

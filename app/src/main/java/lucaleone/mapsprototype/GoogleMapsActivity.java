@@ -32,6 +32,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.PolyUtil;
 import com.google.maps.DirectionsApi;
@@ -46,14 +47,17 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -391,6 +395,30 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             Toast.makeText(this, "Error loading path", Toast.LENGTH_LONG).show();
         }
     }
+
+    private void drawMarketZone() {
+        try {
+            DownLoadMarketDataThread downloadData = new DownLoadMarketDataThread();
+            downloadData.start();
+            downloadData.join();
+            //Draw each market on map
+            ArrayList<String> result = downloadData.getResult();
+
+            for(String polygon : result) {
+                polygon = polygon.substring(9, polygon.length()-2);
+                String[] polygonPoint = polygon.split(",");
+                ArrayList<LatLng> polygonLatLng = new ArrayList<>();
+                for(String point : polygonPoint) {
+                    LatLng latLng = new LatLng(Double.valueOf(point.split(" ")[1]), Double.valueOf(point.split(" ")[0]));
+                    polygonLatLng.add(latLng);
+                }
+                mMap.addPolygon(new PolygonOptions().addAll(polygonLatLng));
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
     //ONMAPREADYCALLBACK METHOD IMPLEMENT
     /**
      * This method is called when the map is loaded
@@ -402,13 +430,14 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         //routingFromAToBAndDrawTrack();
         //getGPXFromAssetAndReadIt();
         //getXMLTrafficDataAndVisualize();
-        mergeAllGPXAndVisualize();
+        //mergeAllGPXAndVisualize();
+        drawMarketZone();
         //mMap.setTrafficEnabled(true); // It visualizes google traffic's info
     }
 
     //INNER CLASS
     private class DownLoadTrafficDataThread extends Thread {
-        Document doc;
+        private Document doc;
 
         @Override
         public void run() {
@@ -427,6 +456,35 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         public Document getFile() {
             return doc;
+        }
+    }
+
+    private class DownLoadMarketDataThread extends Thread {
+        private ArrayList<String> stringResult;
+
+        @Override
+        public void run() {
+            try {
+                //Get market position from server
+                URL url = new URL("http://vforvaiano.altervista.org/getMercati.php");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setConnectTimeout(60000);
+                connection.connect();
+                InputStream is = connection.getInputStream();
+                //connection.disconnect();
+                BufferedReader br = new BufferedReader(new InputStreamReader(is));
+                String s;
+                stringResult = new ArrayList<>();
+                while((s = br.readLine()) != null) {
+                    stringResult.add(s);
+                }
+            } catch(Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        public ArrayList<String> getResult() {
+            return stringResult;
         }
     }
 

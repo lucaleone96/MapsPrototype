@@ -74,7 +74,7 @@ import es.atrapandocucarachas.gpxparser.model.Trkpt;
 import es.atrapandocucarachas.gpxparser.parser.GpxParser;
 
 
-public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCallback/*, LocationListener*/ {
+public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCallback {
     private final int GPS_PERMISSION = 0;
     private GoogleMap mMap;
     private ArrayList<Location> tracking = new ArrayList<>();
@@ -287,7 +287,6 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
             //TODO: Creazione del file e invio al server
             // Remove single point and create the list of street with hit counter
             for(List<String> path : listOf) {
-                // If the path contains only a street
                 for (int i = 0; i < path.size() - 2; i++) {
                     if (path.get(i).equals(path.get(i + 1))) {
                         path.remove(i);
@@ -300,8 +299,26 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                     }
                 }
             }
-            WebRequest wr = new WebRequest("updateAbitude.php", listOf);
-            wr.execute();
+
+            System.out.println("C");
+            /*for(List<String> path : listOf) {
+                for (int i = 0; i < path.size(); i++) {
+                    if (path.get(i).equals(path.get(i + 1))) {
+                        path.remove(i);
+                        path.remove(i);
+                        if ((i > 0 && i < path.size()) && path.get(i).split(";")[0].equals(path.get(i - 1).split(";")[0])) {
+                            path.remove(i);
+                            path.remove(i - 1);
+                            i = i - 1;
+                        }
+                    }
+                }
+            }
+            String[] field = {"name", "coord"};
+            String[] value = {"luca", stringList};
+
+            WebRequest wr = new WebRequest("updateAbitude.php", field, value);
+            wr.execute();*/
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -490,62 +507,27 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     public class WebRequest extends AsyncTask<Object, Object, Object> {
         private final String nomeScript;
-        private final ArrayList<List<String>> listOf;
+        private final String[] field, value;
 
-        WebRequest(String nomeScript, ArrayList<List<String>> listOf) {
+        WebRequest(String nomeScript, String[] field, String[] value) {
             this.nomeScript = nomeScript;
-            this.listOf = listOf;
+            this.field = field;
+            this.value = value;
         }
 
         @Override
         protected Object doInBackground(Object... params) {
-            InputStream in;
-            try {
-                URL url = new URL("http://vforvaiano.altervista.org/" + nomeScript);
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                connection.setConnectTimeout(60000);
-                connection.setRequestMethod("POST");
-                connection.connect();
-                // Generate parameter for the request
-                Uri.Builder builder = new Uri.Builder();
-                Random r = new Random();
-                String name = String.valueOf(r.nextLong());
-                builder.appendQueryParameter("name", name);
-                for(List<String> point : listOf) {
-                    for(int i = 0; i < point.size(); i=i+2) {
-                        String point1 = point.get(i), point2 = point.get(i+1);
-                        int begin = point1.indexOf(";");
-                        int finish = point1.indexOf(";");
-                        String lat1 = point1.substring(begin, finish);
-                        String long1 = point1.substring(finish);
-                        begin = point2.indexOf(";");
-                        finish = point2.indexOf(";");
-                        String lat2 = point2.substring(begin, finish);
-                        String long2 = point2.substring(finish);
-                        builder.appendQueryParameter("lat1", lat1)
-                                .appendQueryParameter("long1", long1)
-                                .appendQueryParameter("lat2", lat2)
-                                .appendQueryParameter("long2", long2);
-                    }
-                }
-
-                String query = builder.build().getEncodedQuery();
-                OutputStream os = connection.getOutputStream();
-                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-                writer.write(query);
-                writer.flush();
-                writer.close();
-                os.close();
-                in = connection.getInputStream();
-            } catch (Exception e) {
-                e.printStackTrace();
-                return null;
-            }
-            return in;
+            return ServerInterface.getData(field, value, nomeScript);
         }
 
         @Override
         protected void onPostExecute(Object objResult) {
+            if (objResult != null && objResult instanceof String) {
+                String result = (String) objResult;
+                if (result.equals("ERRORE")) {
+                    System.out.println("Errore!!");
+                }
+            }
         }
 
     }

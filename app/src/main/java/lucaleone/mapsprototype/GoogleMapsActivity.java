@@ -313,12 +313,13 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                         }
                     }
                 }
-            }
+            }*/
+            String stringList = "44.879;7.31392;45.0224;7.63587";
             String[] field = {"name", "coord"};
             String[] value = {"luca", stringList};
 
             WebRequest wr = new WebRequest("updateAbitude.php", field, value);
-            wr.execute();*/
+            wr.execute();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -447,8 +448,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         //routingFromAToBAndDrawTrack();
         //getGPXFromAssetAndReadIt();
         //getXMLTrafficDataAndVisualize();
-        //mergeAllGPXAndVisualize();
-        drawMarketZone();
+        mergeAllGPXAndVisualize();
+        //drawMarketZone();
         //mMap.setTrafficEnabled(true); // It visualizes google traffic's info
     }
 

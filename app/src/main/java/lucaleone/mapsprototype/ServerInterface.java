@@ -42,7 +42,7 @@ public class ServerInterface {
             connection.setUseCaches(false);
             connection.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
 
-            // Invia dati GET
+            // Invia dati REQUEST
             DataOutputStream outputStream = new DataOutputStream(connection.getOutputStream());
             outputStream.writeBytes(data);
             outputStream.flush();

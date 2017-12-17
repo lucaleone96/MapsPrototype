@@ -300,21 +300,13 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 }
             }
 
-            System.out.println("C");
-            /*for(List<String> path : listOf) {
-                for (int i = 0; i < path.size(); i++) {
-                    if (path.get(i).equals(path.get(i + 1))) {
-                        path.remove(i);
-                        path.remove(i);
-                        if ((i > 0 && i < path.size()) && path.get(i).split(";")[0].equals(path.get(i - 1).split(";")[0])) {
-                            path.remove(i);
-                            path.remove(i - 1);
-                            i = i - 1;
-                        }
-                    }
+            System.out.println(listOf);
+            String stringList = "";
+            for(List<String> path : listOf) {
+                for(int i = 0; i < path.size(); i++) {
+                    stringList += path.get(i).split(";")[1] + ";" + path.get(i).split(";")[2];
                 }
-            }*/
-            String stringList = "44.879;7.31392;45.0224;7.63587";
+            }
             String[] field = {"name", "coord"};
             String[] value = {"luca", stringList};
 
@@ -527,6 +519,9 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
                 String result = (String) objResult;
                 if (result.equals("ERRORE")) {
                     System.out.println("Errore!!");
+                }
+                else {
+                    System.out.println(result);
                 }
             }
         }
